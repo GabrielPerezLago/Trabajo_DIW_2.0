@@ -1,0 +1,323 @@
+/* Variables de colores */
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #f5f5f5;
+    --text-color: #333333;
+    --hover-color: #104e8b;
+}
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #333333;
+    line-height: 1.6;
+}
+
+body h1{
+    font-size: 20rem;
+    font-family: "Tinos", serif;
+}
+
+body h2{
+    font-size: 3rem;
+    font-family: "Tinos", serif;
+}
+
+body h3{
+    font-size: x-large;
+}
+
+/* Encabezado */
+header {
+    background-image: url(../img/taller.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.menu-navegacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.menu-navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.menu-navegacion a:hover {
+    color: #104e8b;
+}
+
+.cabecera {
+    display: grid;
+    align-items: center;    
+    padding-top: 100px;
+    text-align: center;             
+}
+
+/* Sección principal */
+main { 
+    
+    background-color: white;
+}
+
+.titulo-informacion,
+.titulo-contenedor-cards, .titulo-horarios {
+    text-align: center;
+    margin-bottom: 20px;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #1e90ff;
+    padding: 30px;
+}
+
+.contenedor-informacion {
+    text-align: center;
+   
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.texto-informacion {
+    font-size: larger;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+}
+
+.contenedor-informacion a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contenedor-informacion a:hover {
+    color: #104e8b;
+    text-decoration: underline;
+}
+
+/* Tarjetas */
+.contenedor-cards{
+    background-color: #7b767686;
+    width: 100%;
+    padding: 50px;
+}
+.cards {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(255, 248, 248, 0.693); */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 1px 1px rgba(16, 15, 15, 0.439);
+}
+
+
+.card h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #1e90ff;
+    margin: 10px 0;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #1e90ff;
+}
+
+.contenedor-horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 500px;
+}
+
+.contenedor-tabla-horarios table, tr, th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+.contenedor-tabla-horarios th, td{
+    padding: 20px;
+}
+
+.contenedor-tabla-horarios th{
+    color: #1e90ff;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    height: 200px;
+}
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor-iconos i {
+    padding: 30px;
+    font-size: 3rem;
+    color: white;
+}
+
+.contenedor-copy{
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .texto-informacion {
+        font-size: large;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 10px;
+    }
+
+    .contenedor-cards{
+        padding: 60px;
+    }
+
+    .cards{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card{
+        width: 300px;
+        height: 400px;
+        margin:20px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    table{
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        width: 100%;
+    }
+    body h1{
+        font-size: 5rem;
+    }
+
+    body h2{
+        font-size: 2rem;
+    }
+
+    header{
+        height: 600px;
+    }
+
+    .menu-navegacion {
+        justify-content: space-evenly;
+        padding: 5px 10px;
+        
+    
+    }
+
+    .menu-navegacion a{
+        font-size: small;
+    }
+
+
+    .texto-informacion{
+        font-size: medium;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .contenedor-cards{
+        padding: 90px;
+        
+    }
+
+    .cards{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card{
+        width: 200px;
+        height: 300px;
+        margin: 10px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .contenedor-horarios {
+        display: none;
+    }
+
+   .contenedor-iconos i{
+    font-size: 1rem;
+   }
+
+   .contenedor-copy p{
+        font-size: small;
+    }
+}

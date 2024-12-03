@@ -1,0 +1,155 @@
+/* Variables de colores */
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #f5f5f5;
+    --text-color: #333333;
+    --hover-color: #104e8b;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+body h1{
+    font-size: 5rem;
+    font-family: "Tinos", serif;
+    padding: 50px;
+}
+
+body h2{
+    font-size: 3rem;
+    font-family: "Tinos", serif;
+}
+
+body h3{
+    font-size: x-large;
+}
+
+header {
+    background-color: #020202ec;
+    /* background-image: url("../img/taller.jpg"); */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+   
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px;
+}
+
+.menu-navegacion .liks-navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-navegacion .liks-navegacion a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    
+}
+
+main h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+main p {
+    margin: 10px 0;
+    line-height: 2;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.valores ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.valores li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.valores li strong {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor-iconos i {
+    padding: 30px;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Responsividad */
+@media (max-width: 800px) {
+    main {
+        padding: 15px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-navegacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        max-width: 90%;
+    }
+
+    main h2 {
+        font-size: 1.2rem;
+    }
+}
