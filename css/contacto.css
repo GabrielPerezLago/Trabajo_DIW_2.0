@@ -4,6 +4,7 @@
     --secondary-color: #f5f5f5;
     --text-color: #333333;
     --hover-color: #104e8b;
+    --primary-color-2: #011f67;
     --background-gradient: linear-gradient(90deg, #1e90ff, #87cefa);
 }
 
@@ -46,12 +47,18 @@ header {
    
 }
 
+.nav-imagen img{
+    border-radius: 40px;
+}
+
 .menu-navegacion {
+    margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15px;
+    /* gap: 15px; */
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .menu-navegacion .liks-navegacion a {
@@ -78,7 +85,7 @@ header {
 }
 
 .informacion-contacto h2, .formulario-login h2 {
-    color: var(--primary-color);
+    color: #011f67;
     margin-bottom: 20px;
     font-size: 1.8rem;
 }
@@ -90,7 +97,7 @@ header {
 
 .informacion-contacto i {
     margin-right: 10px;
-    color: var(--primary-color);
+    color: #011f67;
 }
 
 .formulario-login form {
@@ -107,14 +114,14 @@ header {
 }
 
 .formulario-login input:focus {
-    border-color: var(--primary-color);
+    border-color: #011f67;
     outline: none;
     box-shadow: 0px 0px 5px rgba(30, 144, 255, 0.5);
 }
 
 .formulario-login button {
     padding: 12px;
-    background-color: var(--primary-color);
+    background-color: #011f67;
     color: white;
     border: none;
     border-radius: 5px;
@@ -128,7 +135,7 @@ header {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: #011f67;
     color: white;
     text-align: center;
     padding: 15px 0;
